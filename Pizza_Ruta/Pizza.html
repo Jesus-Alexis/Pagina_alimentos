@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Pizza.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- -------------BUSCADOR------------- -->
+    <aside class="sidebar__nav">
+      <br /><br />
+      <div class="search-bar">
+        <form class="open_button">
+          <label for="open-menu" class="material-symbols-outlined">
+            menu
+          </label>
+          <input class="abrir-menu" type="checkbox" id="open-menu" />
+        </form>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li>
+              <span class="material-symbols-outlined comida">
+                menu_book
+                <a href="/index.html">Menu</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida"
+                >skillet
+                <a href="/Alitas_ruta/ALlitas.html">Alitas</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida">
+                lunch_dining
+                <a href="/Hamburguesas_ruta/Hamburguesas.html">Hamburguesas</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida"
+                >icecream
+
+                <a href="#postres">Postres</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida"
+                >food_bank
+                <a href="#postres">Paquetes</a>
+              </span>
+            </li>
+            <li></li>
+          </ul>
+          <form class="close_button">
+            <label for="close-menu" class="material-symbols-outlined">
+              logout
+              <input class="cerrar-menu" type="checkbox" id="close-menu" />
+            </label>
+            Salir
+          </form>
+        </nav>
+        <input class="barra__busqueda" type="text" placeholder="Buscar..." />
+        <button class="search-button">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </div>
+      <!--********************* Menu_Wraper*************************** -->
+      <section>
+        <div class="Alit__wraper" id="Menu">
+          <div class="title__Pizza piz1">
+            <h2>PIZZAS</h2>
+          </div>
+          <div class="Piz2">
+            <img
+              class="mexicana"
+              src="https://static.phdvasia.com/br/menu/single/desktop_thumbnail_78e16e13-2c6f-4d87-8b30-e3504bfbcb89.jpg"
+              alt="Pizza__mexicana"
+            />
+            <h3>MEXICANA</h3>
+          </div>
+          <div class="piz3">
+            <img
+              class="clasica"
+              src="https://www.hola.com/horizon/landscape/e9e1e82cb873-pepperoni-pizza-abob-t.jpg"
+              alt="Pizza__clasica"
+            />
+            <h3>CLASICA</h3>
+          </div>
+          <div class="piz4">
+            <img
+              class="champiñon"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqa-8iDpo8Ls71b9hoz7LpH78x054-R1XzQ&s"
+              alt="Alitas__mango"
+            />
+            <h3>CHAMPIÑON</h3>
+          </div>
+          <div class="piz5">
+            <img
+              class="margarita"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjo9nnM4x4yqYkNG8kQmUvHpcpPr1pvlOGA&s"
+              alt="Pizza__margarita"
+            />
+            <h3>MARGARITA</h3>
+          </div>
+          <div class="piz6">
+            <img
+              class="napolitana"
+              src="https://osojimix.com/wp-content/uploads/2022/06/Para-la-masa-de-pizza-napolitana-8-hrs-fermentacion-Web-1-500x500.jpg"
+              alt="Pizza__napolitana"
+            />
+            <h3>NOPOLITANA</h3>
+          </div>
+          <div class="piz7">
+            <img
+              class="queso"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEMVWVKoL_HKC39ytBvlnCCBn3sJbLyIrFNFmqneOeWWIOLt-StXQ0Ebx3FvjQi6cRCRBLBe5ADRGw-igZdmGUjVwZVfjQs4s1HgUpRTq2Bf5Z2dibEwNr0CkQJOhJoMGImqxs_lPAk18/s1600/Pizza-Cuatro-Quesos-Portada.jpg"
+              alt="Pizza__4_quesos"
+            />
+            <h3>QUESOS</h3>
+          </div>
+        </div>
+      </section>
+    </aside>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
