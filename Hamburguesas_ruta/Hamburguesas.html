@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styHam.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- -------------BUSCADOR------------- -->
+    <aside class="sidebar__nav">
+      <br /><br />
+      <div class="search-bar">
+        <form class="open_button">
+          <label for="open-menu" class="material-symbols-outlined">
+            menu
+          </label>
+          <input class="abrir-menu" type="checkbox" id="open-menu" />
+        </form>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li>
+              <span class="material-symbols-outlined comida">
+                menu_book
+                <a href="/index.html">Menu</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida"
+                >skillet
+                <a href="/Alitas_ruta/ALlitas.html">Alitas</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida"
+                >local_pizza
+                <a href="#Pizzas">Pizzas</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida"
+                >icecream
+
+                <a href="#postres">Postres</a>
+              </span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined comida"
+                >food_bank
+                <a href="#postres">Paquetes</a>
+              </span>
+            </li>
+            <li></li>
+          </ul>
+          <form class="close_button">
+            <label for="close-menu" class="material-symbols-outlined">
+              logout
+              <input class="cerrar-menu" type="checkbox" id="close-menu" />
+            </label>
+            Salir
+          </form>
+        </nav>
+        <input class="barra__busqueda" type="text" placeholder="Buscar..." />
+        <button class="search-button">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </div>
+      <!--********************* Menu_Wraper*************************** -->
+      <section>
+        <div class="ham__wraper" id="Menu">
+          <div class="title__hamb hamb0">
+            <h2>HAMBURGUESAS</h2>
+          </div>
+          <div class="hamb1">
+            <img
+              class="clasica"
+              src="https://www.serargentino.com/public/images/2021/01/16109941330-17-burger-773x458.jpg"
+              alt="hamburguesa_clasica"
+            />
+            <h3>CLASICA</h3>
+          </div>
+          <div class="hamb2">
+            <img
+              class="spacial"
+              src="https://img2.elyerromenu.com/images/cafe-bar-the-last-train/hamburguesa-americana-8/img.webp"
+              alt="hamburguesa_espacial"
+            />
+            <h3>SPACIAL</h3>
+          </div>
+          <div class="hamb3">
+            <img
+              class="doble_queso"
+              src="https://static.wixstatic.com/media/29cc8e_aaad1f9b690b4176a0cef213b971f787~mv2.jpg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/29cc8e_aaad1f9b690b4176a0cef213b971f787~mv2.jpg"
+              alt="hamburguesa_doble_queso"
+            />
+            <h3>DOBLE QUESO</h3>
+          </div>
+          <div class="hamb4">
+            <img
+              class="arrachera"
+              src="https://img77.uenicdn.com/image/upload/v1568110937/category/shutterstock_424917007.jpg"
+              alt="hamburguesa_arrachera"
+            />
+            <h3>ARRACHERA</h3>
+          </div>
+          <div class="hamb5">
+            <img
+              class="Vegetariana"
+              src="https://phantom-elmundo.unidadeditorial.es/1d0aa710abaadb0673aeb3574d56b2f0/f/webp/assets/multimedia/imagenes/2018/06/12/15287954470369.jpg"
+              alt="hamburguesa_vegetariana"
+            />
+            <h3>VEGETARIANA</h3>
+          </div>
+          <div class="hamb6">
+            <img
+              class="infantil"
+              src="https://img.freepik.com/fotos-premium/hamburguesas-monstruos-haloween-halloween-madera-arte-comida-divertida-ninos_652855-497.jpg"
+              alt="hamburguesa_infantil"
+            />
+            <h3>INFANTIL</h3>
+          </div>
+        </div>
+      </section>
+    </aside>
+    <script src="/src/main.js"></script>
+  </body>
+</html>

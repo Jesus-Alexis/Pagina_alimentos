@@ -1,0 +1,816 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+15&family=Oswald:wght@200..700&family=Outfit&family=Pixelify+Sans:wght@400..700&family=Poppins&family=Rammetto+One&family=Russo+One&family=Silkscreen&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 20%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.h__container {
+  font-family: "Oswald", sans-serif;
+  background-color: #e99457;
+  font-size: 80%;
+  height: 80%;
+  width: 100%;
+}
+
+.dinosaurio {
+  justify-content: center;
+  margin-left: 35%;
+  padding-bottom: 30%;
+}
+
+.logo {
+  width: 550px;
+  height: 520px;
+  margin-bottom: 35px;
+}
+
+/*------------------------------ Navbar---------------------------- */
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f4da81;
+}
+
+.sidebar__nav {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-family: "Oswald", sans-serif;
+}
+
+.abrir-menu,
+.open_button,
+.close_button {
+  display: none;
+}
+
+.barra__busqueda {
+  flex: 1;
+  border: none;
+  outline: none;
+  align-items: center;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 48px;
+  border: 2px solid #000;
+  background-color: #ffff;
+}
+
+.search-button {
+  font-size: 18px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  margin: 0 5px;
+}
+
+.nav-list span {
+  cursor: none;
+}
+
+/* -----------Main--------------------------- */
+main {
+  background-color: #f4da81;
+}
+
+/* ------------------------Menu-------------------------- */
+
+.hamburguesas,
+.PIZZAS,
+.BEBIDAS,
+.alitas,
+.Postres {
+  width: 450px;
+  height: 358px;
+  border-radius: 28px;
+  box-shadow: 0px 0px 12px 0px #000;
+}
+
+.menu__wraper {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 35px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.comidas1 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.comidas2 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+
+.comidas3 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 8;
+  grid-row-start: 2;
+}
+
+.comidas4 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+
+.comidas5 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 7;
+  grid-row-start: 4;
+}
+
+.comidas6 {
+  grid-column: span 3 / span 3;
+  grid-column-start: 5;
+  grid-row-start: 7;
+}
+
+.comidas7 {
+  grid-column: span 3 / span 3;
+  grid-column-start: 5;
+  grid-row-start: 8;
+}
+
+/* ---------------------REDES SOCIALES---------------------------- */
+.RedeSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Subt {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Oswald", sans-serif;
+}
+
+.face,
+.insta,
+.twitch {
+  width: 80px;
+}
+
+/* ----------------------SidebarMenu---------------------- */
+/* ----------------------------Tablets ----------------------*/
+@media screen and (max-width: 1280px) {
+  .open_button,
+  .close_button {
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .barra__busqueda {
+    flex: 1;
+    border: none;
+    outline: none;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border: none;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #ececec;
+  }
+
+  .close_button,
+  .comida {
+    color: #ffff;
+  }
+
+  .dinosaurio {
+    justify-content: center;
+    margin-top: 30%;
+    margin-left: 30%;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    background-color: #ffff;
+    border-radius: 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .hamburguesas,
+  .PIZZAS,
+  .BEBIDAS,
+  .alitas,
+  .Postres {
+    width: 280px;
+    height: 250px;
+    box-shadow: 0px 0px 12px 0px #000;
+  }
+
+  .menu__wraper {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 35px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .comidas1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .comidas2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 2;
+  }
+
+  .comidas3 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 8;
+    grid-row-start: 2;
+  }
+
+  .comidas4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+  }
+
+  .comidas5 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    grid-row-start: 4;
+  }
+
+  .comidas6 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 6;
+  }
+
+  .comidas7 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 7;
+  }
+
+  /* ---------------------REDES SOCIALES---------------------------- */
+  .RedeSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .Subt {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .face,
+  .insta,
+  .twitch {
+    width: 50px;
+  }
+}
+
+/* -------------------Tablets minis--------------------- */
+@media screen and (max-width: 1080px) {
+  .logo {
+    width: 350px;
+    height: 350px;
+  }
+
+  .open_button,
+  .close_button {
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .barra__busqueda {
+    flex: 1;
+    border: none;
+    outline: none;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border: none;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #ececec;
+  }
+
+  .close_button,
+  .comida {
+    color: #ffff;
+  }
+
+  .dinosaurio {
+    justify-content: center;
+    margin-top: 30%;
+    margin-left: 30%;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    background-color: #ffff;
+    border-radius: 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .hamburguesas,
+  .PIZZAS,
+  .BEBIDAS,
+  .alitas,
+  .Postres {
+    width: 180px;
+    height: 150px;
+  }
+
+  .menu__wraper {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 35px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .comidas1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .comidas2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 2;
+  }
+
+  .comidas3 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 8;
+    grid-row-start: 2;
+  }
+
+  .comidas4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+  }
+
+  .comidas5 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    grid-row-start: 4;
+  }
+
+  .comidas6 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 6;
+  }
+
+  .comidas7 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 7;
+  }
+}
+
+/* -----------------Celulares------------------------- */
+@media screen and (max-width: 550px) {
+  .logo {
+    width: 250px;
+    height: 300px;
+  }
+  .dinosaurio {
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .open_button,
+  .close_button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ececec;
+    border: none;
+    outline: none;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    background-color: #ffff;
+    border-radius: 48px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .barra__busqueda {
+    border: none;
+    background-color: #ffff;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #ececec;
+  }
+
+  .close_button,
+  .comida {
+    color: #ffff;
+  }
+
+  .sidebar__nav {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+  }
+
+  .hamburguesas,
+  .PIZZAS,
+  .BEBIDAS,
+  .alitas,
+  .Postres {
+    width: 200px;
+    height: 150px;
+    border-radius: 28px;
+    box-shadow: 0px 0px 12px 0px #000;
+  }
+
+  .menu__wraper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 8px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .comidas1 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+  }
+
+  .comidas2 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .comidas3 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .comidas4 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+  }
+
+  .comidas5 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 5;
+  }
+
+  .comidas6 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 10;
+  }
+
+  .comidas7 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 11;
+  }
+}
+
+/* ---------------------Celulares grandes------------------------ */
+@media screen and (max-width: 700px) {
+  .dinosaurio {
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+
+  .logo {
+    width: 250px;
+    height: 300px;
+  }
+
+  .open_button,
+  .close_button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ececec;
+    border: none;
+    outline: none;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    background-color: #ffff;
+    border-radius: 48px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .barra__busqueda {
+    border: none;
+    background-color: #ffff;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #ececec;
+  }
+
+  .close_button,
+  .comida {
+    color: #ffff;
+  }
+
+  .sidebar__nav {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+  }
+
+  .hamburguesas,
+  .PIZZAS,
+  .BEBIDAS,
+  .alitas,
+  .Postres {
+    width: 300px;
+    height: 250px;
+    border-radius: 28px;
+    box-shadow: 0px 0px 12px 0px #000;
+  }
+
+  .menu__wraper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 15px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .comidas1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+  }
+
+  .comidas2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .comidas3 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+  }
+
+  .comidas4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 7;
+  }
+
+  .comidas5 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 9;
+  }
+
+  .comidas6 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 12;
+  }
+
+  .Subt {
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .face,
+  .insta,
+  .twitch {
+    width: 40px;
+  }
+
+  .Red1 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .Red2 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+
+  .Red3 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+  }
+}

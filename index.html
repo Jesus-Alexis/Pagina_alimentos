@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Dino Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Encabezdo de la pagina -->
+      <div class="h__container">
+        <h1>DINO RESTAURANT</h1>
+        <div class="dinosaurio">
+          <img src="src/Logo Restaurante.png" alt="dinosaurio" class="logo" />
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar menu para moverse atreaves de la pagina -->
+    <main>
+      <br /><br />
+      <!-- Espacios para el sidebar menu -->
+      <aside class="sidebar__nav">
+        <div class="search-bar">
+          <form class="open_button">
+            <label for="open-menu" class="material-symbols-outlined">
+              menu
+            </label>
+            <input class="abrir-menu" type="checkbox" id="open-menu" />
+          </form>
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <!--  <li>
+                <span class="material-symbols-outlined comida">
+                  menu_book
+                  <a href="#Menu">Menu</a>
+                </span>
+              </li> -->
+              <li>
+                <span class="material-symbols-outlined comida">
+                  lunch_dining
+                  <a href="/Hamburguesas_ruta/Hamburguesas.html"
+                    >Hamburguesas</a
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined comida"
+                  >skillet
+                  <a href="/Alitas_ruta/ALlitas.html">Alitas</a>
+                </span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined comida"
+                  >local_pizza
+                  <a href="#Pizzas">Pizzas</a>
+                </span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined comida"
+                  >icecream
+                  <a href="#postres">Postres</a>
+                </span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined comida"
+                  >food_bank
+                  <a href="#postres">Paquetes</a>
+                </span>
+              </li>
+              <li></li>
+            </ul>
+            <form class="close_button">
+              <label for="close-menu" class="material-symbols-outlined">
+                logout
+                <input class="cerrar-menu" type="checkbox" id="close-menu" />
+              </label>
+              Salir
+            </form>
+          </nav>
+          <input class="barra__busqueda" type="text" placeholder="Buscar..." />
+          <button class="search-button">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+      </aside>
+      <br /><br />
+      <div class="menu__wraper" id="Menu">
+        <div class="comidas1">
+          <a href="/Hamburguesas_ruta/Hamburguesas.html">
+            <img
+              class="hamburguesas"
+              src="src/Imagen_Hamurguesa.jpg"
+              alt="Hamburguesas"
+            />
+          </a>
+          <h2>HAMBURGUESAS</h2>
+        </div>
+        <div class="comidas2">
+          <a href="/Alitas_ruta/ALlitas.html">
+            <img class="alitas" src="src/Alirtas_Con_Papas.jpg" alt="Alitas" />
+          </a>
+          <h2>ALITAS</h2>
+        </div>
+        <div class="comidas3">
+          <img class="PIZZAS" src="src/pizza-.webp" alt="Pizzas" />
+          <h2>PIZZAS</h2>
+        </div>
+        <div class="comidas4">
+          <img class="BEBIDAS" src="src/limonada-mineral.jpeg" alt="BEBIDAS" />
+          <h2>BEBIDAS</h2>
+        </div>
+        <div class="comidas5">
+          <img class="Postres" src="src/Postres.jpg" alt="Postres" />
+          <h2>POSTRES</h2>
+        </div>
+        <div class="comidas6">
+          <h2 class="Subt">Siguenos</h2>
+        </div>
+        <div class="RedeSociales comidas7">
+          <div class="Red1">
+            <img
+              class="face"
+              src="src/facebook-color-svgrepo-com.svg"
+              alt="Facebook"
+            />
+          </div>
+          <div class="Red2">
+            <img
+              class="insta"
+              src="src/instagram-1-svgrepo-com.svg"
+              alt="Instagram"
+            />
+          </div>
+          <div class="Red3">
+            <img class="twitch" src="src/twitch-svgrepo-com.svg" alt="Twitch" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
